@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    gap: 40px;
+  }
+  li {
+    list-style: none;
+    font-size: 18px;
+  }
+  li:hover {
+    text-decoration: underline;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .menu {
+    display: none;
+    width: 20px;
+  }
+  h1 {
+    font-weight: 600;
+  }
+
+  .home{
+    position: relative;
+    background: url('/images/sleman.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .home h1{
+    color: white;
+    font-size: 3em;
+    text-shadow: 0px 0px 20px black;
+  }
+  .home p{
+    color: white;
+    padding: 0 25%;
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+  }
+
+  .content article{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .content article div{
+    display: flex;
+  }
+  .content article h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .content article div img{
+    width: 400px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  .content article div p{
+    text-align: justify;
+  }
+  .content div{
+    width: 100%;
+  }
+
+  .content{
+    display: flex;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  .content aside{
+    margin-top: 30px;
+    background-color: rgb(221, 221, 255);
+    height: 100%;
+    width: 25%;
+  }
+  .content aside h2{
+    font-weight: 600;
+    text-align: center;
+  }
+  .content aside img{
+    width: 100%;
+    padding: 0 10px;
+    object-fit: cover;
+  }
+  .content div p{
+    text-align: center;
+  }
+
+  footer{
+    margin-top: 50px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: small;
+  }
+
+  @media screen and (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      margin-top: 210px;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      padding: 20px 20px 0px 10px;
+      box-shadow: 0px 2px 5px 0px;
+      z-index: 10;
+    }
+    .menu {
+      display: block;
+    }
+
+    .home p {
+      padding: 0 10px;
+    }
+
+    .content article div img{
+      margin-right: 0;
+      width: 100%;
+    }
+    .content article{
+      width: 100%;
+    }
+    .content article{
+      width: 100%;
+    }
+    .content article div{
+      display: block;
+    }
+    .content{
+      display: block;
+    }
+    .content aside{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px ) and (min-width: 768px){
+    .content article{
+      width: 100%;
+    }
+    .content article div{
+      display: block;
+    }
+    .content{
+      display: block;
+    }
+    .content aside{
+      width: 100%;
+      height: 100%;
+    }
+  }
