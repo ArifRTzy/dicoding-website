@@ -43,7 +43,7 @@
 
   .home{
     position: relative;
-    background: url('/images/sleman.jpg');
+    background: url('./images/sleman.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
